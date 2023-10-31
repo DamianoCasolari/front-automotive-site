@@ -1,0 +1,172 @@
+.spinner_loading {
+    animation: tilt 2s infinite linear;
+
+}
+
+// sPINNER ANIMATION
+
+@keyframes tilt {
+
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateY(-60deg);
+
+    }
+
+    50% {
+        transform: rotateY(0deg);
+
+    }
+
+    75% {
+        transform: rotateY(60deg);
+
+    }
+
+    100% {
+        transform: rotateY(0deg);
+
+    }
+}
+
+// FADE IN
+
+.faded_in_b {
+    animation: fade_in_below 0.7s ease-out both;
+}
+
+@keyframes fade_in_below {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.faded_in_a {
+    animation: fade_in_above 0.7s ease-out both;
+}
+
+@keyframes fade_in_above {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+.tilt_effect {
+    animation: tilt2 10s infinite linear;
+
+}
+
+// Carousel animation
+
+@keyframes tilt2 {
+
+    0% {
+        transform: perspective(300px) translateZ(0px);
+    }
+
+    25% {
+        transform: perspective(300px) translateZ(-10px);
+    }
+
+    50% {
+        transform: perspective(300px) translateZ(0px);
+        filter: drop-shadow(0px 0px 5px black);
+    }
+
+    75% {
+        transform: perspective(300px) translateZ(10px);
+        filter: drop-shadow(3px 10px 5px black);
+
+    }
+
+    100% {
+        transform: perspective(300px) translateZ(0px);
+        filter: drop-shadow(0px 0px 5px black);
+
+    }
+}
+
+
+
+
+.form_container {
+
+    transform: translateZ(30px) !important;
+}
+
+
+.ghost_fade {
+    animation: ghost2 4s linear both;
+}
+
+
+@keyframes ghost_80 {
+
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes ghost_100 {
+
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ghost2 {
+
+    0% {
+        filter: blur(100px);
+
+    }
+
+    100% {
+        filter: blur(0);
+    }
+}
+
+
+
+.bg_translate {
+    animation: bg_slide 2s linear forwards;
+}
+
+
+@keyframes bg_slide {
+
+    0% {
+        background-position: 50%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+}

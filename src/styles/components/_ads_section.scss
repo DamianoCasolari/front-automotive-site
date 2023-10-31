@@ -1,0 +1,92 @@
+@use '../partials/variables' as *;
+
+
+.container_ads {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+//hide the scroll bar and add grabbing cursor
+#album_rotator_holder::-webkit-scrollbar {
+    width: 0;
+}
+
+#album_rotator_holder {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: grab;
+    cursor: -webkit-grab;
+}
+
+
+#album_rotator_holder.grabbing {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+
+
+//effects on the card
+
+.img_container_ads {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.8s;
+    }
+}
+
+
+.album_item {
+    height: 100% !important;
+    min-height: 200px;
+    display: inline-block;
+    margin: 0 15px 0px 15px;
+    max-height: 470px;
+    overflow: hidden;
+    transition-duration: 0.8s;
+
+    &:hover img {
+        width: 110%;
+        height: 110%;
+        transform: translateY(-5%);
+    }
+
+}
+
+
+//appear contacs button when there is necessary space
+
+.contacts_button {
+    display: none;
+}
+
+@media screen and (min-height: 1090px) {
+
+    .contacts_button {
+        display: flex !important;
+    }
+}
+
+
+
+// appear the buttons for horizzontal scroll in the pc screen
+
+.height_responsive {
+    height: 70%;
+
+}
+
+@media screen and (min-height: 768) {
+
+    .height_responsive {
+        height: 60%;
+
+    }
+}

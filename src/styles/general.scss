@@ -1,0 +1,23 @@
+// Import all of Bootstrap's CSS
+
+@use "./partials/utilities_selectors.scss" as *;
+@use "./partials/hover_effect.scss" as *;
+@use "./partials/active_effect.scss" as *;
+@use "./partials/animation_effect.scss" as *;
+
+
+@use "./components/carousel" as *;
+@use "./components/header" as *;
+@use "./components/footer" as *;
+@use "./components/ads_section" as *;
+@use "./components/single_ad" as *;
+@use "./components/contacts" as *;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&family=Poppins:wght@300;400;500&family=Great+Vibes&family=Satisfy&display=swap');
+@import "/node_modules/bootstrap/scss/bootstrap";
+
+body {
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif !important;
+}
